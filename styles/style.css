@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+@font-face {
+ font-family: "Economica";
+ src: url("../Document_fonts/OpenSansCondensed-Light.ttf");
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#d9d7da;
+    font-size:40px;
+    text-align:center;
+    font-family:Economica;
+}
+
+header{
+    background-image: url('../medias/accueil_1020.jpg');
+    background-size:  100vw 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin:auto;
+    height: 100vh;
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.4);
+}
+
+section{
+    width: 100%;
+}
+
+form{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    color:black;
+    border:2px solid black;
+    padding: 10px;
+    background-image: radial-gradient(circle at top left, white, silver);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+input{
+    font-size: 15px;
+    margin:5px;
+}
+
+nav{
+    display: flex;
+}
+
+.form{
+    display:flex;
+    margin-top:100px;
+    margin-left:10px;
+}
+
+.lienGestion{
+    position: relative;
+  overflow: hidden;
+  width: 10%;
+  margin-top :40px;
+  background: #121B18;
+  font-size:0;
+}
+.lienGestion a{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    color: #48969a;
+    text-decoration: none;
+    text-align:center;
+    font-size: 17px;
+}
+.nom{
+    color: white;
+    font-weight:bold;
+    font-style: italic;
+    width: 20%;
+    margin:auto;
+    font-size: 25px;
+}
+
+.gestion{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    width:20%;
+    height: 15%;
+    color:black;
+    border:2px solid black;
+    padding: 10px;
+    background-image: radial-gradient(circle at top left, white, silver);
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.4);
+    border-radius:5px;
+    list-style-type: none;
+}
+.gestion li{
+    display:flex;
+    justify-content: space-start;
+
+}
+.gestion h2{
+    font-size: 25px;
+}
+.gestion a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    line-height: 25px;
+}
+.acceuil{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+
+}
+.img img{
+    border-radius: 5%;
+    width: 200px;
+    height: 180px;
+    margin:15px;
+}
+
+.acceuil .titre {
+    font-size: 25px;
+    font-weight: bold;
+    margin:10px;
+    height: 20%;
+}
+
+.acceuil .lien{
+    text-align: left;
+    font-size: 20px;
+    margin:10px;
+    height: 10%;
+}
+
+.acceuil .user{
+    text-align: right;
+    font-size: 20px;
+    margin:5px;
+    height: 10%;
+}
+
+.modif{
+    width: 70%;
+}
+.modif h1{
+    font-size: 30px;
+}
+
+/*----------------------------------Button Lien------------------*/
+.real{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 40px;
+    padding:10px;
+    color: #48969a;
+    font-size: 25px;
+}
+.realId{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 30px;
+    padding:10px;
+    color: #48969a;
+    font-size: 25px;
+    background-color: #121B18;
+    box-shadow: 0px 12px 10px -10px rgba(0,0,0,0.7);
+}
+.titreAccueil{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 30px;
+    padding:10px;
+    color: #48969a;
+    font-size: 25px;
+    background-color: #121B18;
+    box-shadow: 0px 12px 10px -10px rgba(0,0,0,0.7);
+}
+.realAcceuil{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    width: 100%;
+    height:20%;
+    justify-content: space-around;
+}
+
+/*-------------slide--------------*/
+
+#wrap{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-slide {
+    display: inline-block;
+    height: 80%;
+    width: 160px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: #121B18;
+    border: 2px solid #121B18;
+    margin: 10px;
+    transition: .5s;
+}
+
+.btn-slide div.title-hover{
+    opacity:1;
+    left: -70%;
+}
+
+  .btn-slide div.title-hover{
+    position: absolute;
+    top: 10px;
+    right:-10%;
+    width: 30%;
+    border-radius: 15px;
+    font-size: 35%;
+    text-align: justify;
+    margin:auto;
+    font-family:Economica;
+    line-height:120%;
+    padding:15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+  .btn-slide:hover div.title-hover{
+    background-color: #e8e8e8;
+  }
+
+/*--------second slide------------*/
+
+
+
+  .btn-slide div.title-hover2{
+    position: absolute;
+    top: 10px;
+    right:5%;
+    width: 30%;
+    border-radius: 15px;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 35%;
+    font-family:Economica;
+    line-height:120%;
+    padding:10px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-slide:hover div.title-hover2{
+    background-color: #e8e8e8;
+  }
+
+/*------------------------------------menu--------------------------------*/
+
+
+.menu {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+  background: #121b18;
+  margin-top:40px;
+  font-size:0;
+}
+.menu a {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 16%;
+  box-sizing: border-box;
+  border-right: 2px solid #e8e8e8;
+  color: #48969a;
+  text-decoration: none;
+  text-align:center;
+  font-size: 18px;
+}
+.lien {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -30%;
+  width: 16%;
+  height: 40px;
+  box-sizing: border-box;
+  background: #fff;
+  opacity:.3;
+  transition: 0.5s ease-in-out;
+}
+.menu a:nth-child(1):hover ~ .lien {
+  left: 2%;
+}
+.menu a:nth-child(2):hover ~ .lien {
+  left: 18%; /* 1/4 total width */
+}
+.menu a:nth-child(3):hover ~ .lien {
+  left: 34%; /* 2/4 total width */
+}
+.menu a:nth-child(4):hover ~ .lien {
+  left: 50%; /* 3/4 total width */
+}
+.menu a:nth-child(5):hover ~ .lien {
+  left: 66%; /* 3/4 total width */
+}
+.menu a:nth-child(6):hover ~ .lien {
+  left: 82%; /* 3/4 total width */
+}
+/**-------------slide service-------------*/
+
+.serv{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    color: #48969a;
+}
+
+
+.slideshow {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    background: #121b18;
+    font-size: 20px;
+    margin:0;
+    box-shadow: 0px 12px 10px -10px rgba(0,0,0,0.7);
+ }
+ 
+ .slideshow ul {
+    width: 400%;
+    height: 800px;
+    padding:0; 
+    list-style: none;
+ }
+ .slideshow li {
+    float: left;
+    width: 400px;
+    height: 400px;
+ }
+ .title{
+     font-size: 22px; 
+     height: 15px;
+     font-weight: bold;
+    }
+
+.cont{
+    width:90%;
+    font-size: 13px; 
+    padding:4%;
+    text-align: justify;
+
+}
+  /*--------------------------*/
+  footer{
+    display: flex;
+    width: 100%;
+    margin-top:50px;
+    height: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: #48969a;
+    background-color:#121b18;
+}
+footer .vide{
+    width: 33.33%;
+}
+footer .copy{
+    width: 33.33%;
+    padding-top:20px;
+}  
+
+footer .social{
+    display: flex;
+    justify-content: flex-end;
+    padding-top:20px;
+    width: 33.33%;
+}  
+footer img{
+   width:20px; 
+   height: 20px;
+   padding-right:8px;
+}
+
+/*----------------medias queries ----------------------*/
+
+@media all and (max-width: 740px)
+{
+    
+    header{
+        background-image: url('../medias/accueil_1020.jpg');
+        background-size: 100vw 50vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin:auto;
+        height: 50vh;
+        box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.4);
+    }
+    .menu{
+        display : none ;
+    }
+    .menu{
+        display : flex;
+        background: none;
+        margin-top: 10px;
+    }
+    .menu a {
+        width: 100%;
+      border: none;
+      color: #48969a;
+      font-size: 8px;
+    }
+    .lienGestion{
+      width: 15%;
+      font-size: 8px;
+      margin-top :10px;
+      background: #121B18;
+    }
+
+    .lienGestion a {
+        font-size:8px;
+    }
+
+    .titreAccueil{
+        width: 70%;
+        font-size: 18px;
+        margin: 20px;
+        padding:10px;
+    }
+    .btn-slide div.title-hover2{
+        word-wrap: break-word; 
+        width: 22%;
+        font-size:8px;
+    }
+    .btn-slide div.title-hover{
+        word-wrap: break-word; 
+        width: 22%;
+        font-size:8px;
+    }
+    .cont{
+        width: 80%;
+     }
+     .btn-slide{
+         width: 100px;
+         height: 50%;        
+     }
+    
+}

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@font-face {
+ font-family: "Economica";
+ src: url("../Document_fonts/OpenSansCondensed-Light.ttf");
+}
+
+html{
+    font-size: 62.5%;
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-size:100vw 100vh;
+    font-family: "Economica";
+    background-color:#d9d7da;
+    font-size: 40px;
+}
+.main{
+    display: flex;
+}
+section{
+    width: 100%;
+}
+
+form{    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#48969a;;
+    font-size:14px;
+}
+input{
+    font-size: 15px;
+    width: 50%;
+    margin:2px;
+}
+textarea{
+    font-size: 15px;
+    width: 50%;
+    height: 200px;
+}
+nav{
+    display: flex;
+    width:100%;
+    background-color:#d9d7da;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 10px;
+    padding:10px;
+    margin-top:0;
+    color: #48969a;
+    font-size: 25px;
+    background-color: #121B18;
+    box-shadow: 0px 12px 10px -10px rgba(0,0,0,0.7);
+}
+select{
+    width: 50%;
+}
+.lienGestion{
+    position: relative;
+  overflow: hidden;
+  width: 10%;
+  background-color:#d9d7da;
+  font-size:0;
+}
+.lienGestion a{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-top : 40px;
+    color: #48969a;
+    text-decoration: none;
+    text-align:center;
+    font-size: 18px;
+}
+
+
+.nom{
+    color: white;
+    font-weight:bold;
+    font-style: italic;
+    width: 20%;
+    margin:auto;
+    font-size: 25px;
+}
+
+
+.modif{
+    width: 70%;
+}
+.modif h1{
+    font-size: 30px;
+}
+.form{
+    display:flex;
+    margin-top:50px;
+    margin-left:10px;
+}
+
+.gestion{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    width:20%;
+    height: 15%;
+    color:black;
+    border:1px solid black;
+    padding: 10px;
+    background-color: silver;
+    box-shadow: 0px 12px 10px -10px rgba(0,0,0,0.7);
+    border-radius:5px;
+    list-style-type: none;
+}
+.gestion li{
+    display:flex;
+
+}
+.gestion h2{
+    font-size: 25px;
+}
+.gestion a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.cv{
+    display: flex;
+    flex-direction: row;
+    margin-left:10%;
+    color: black;
+    font-size: 20px;
+}
+.titreAccueil{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 30px;
+    padding:10px;
+    color: #48969a;
+    font-size: 25px;
+    background-color: #121B18;
+    box-shadow: 0px 12px 10px -10px rgba(0,0,0,0.7);
+}
+ 
+/*------------------------------------menu--------------------------------*/
+
+
+.menu {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    background-color:#d9d7da;
+    margin-top:40px;
+    font-size:0;
+  }
+  .menu a {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 16%;
+    box-sizing: border-box;
+    border-right: 2px solid #e8e8e8;
+    color: #48969a;
+    text-decoration: none;
+    text-align:center;
+    font-size: 18px;
+  }
+  .lien {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -30%;
+    width: 16%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color:#121b18;
+    transition: 0.5s ease-in-out;
+  }
+  .menu a:nth-child(1):hover ~ .lien {
+    left: 0%;
+  }
+  .menu a:nth-child(2):hover ~ .lien {
+    left: 16%; /* 1/4 total width */
+  }
+  .menu a:nth-child(3):hover ~ .lien {
+    left: 32%; /* 2/4 total width */
+  }
+  .menu a:nth-child(4):hover ~ .lien {
+    left: 48%; /* 3/4 total width */
+  }
+  
+  /*--------------------------*/
+  footer{
+    display: flex;
+    width: 100%;
+    margin-top:50px;
+    height: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: #48969a;
+    background-color:#121b18;
+}
+footer .vide{
+    width: 33.33%;
+}
+footer .copy{
+    width: 33.33%;
+    padding-top:20px;
+}  
+
+footer .social{
+    display: flex;
+    justify-content: flex-end;
+    padding-top:20px;
+    width: 33.33%;
+}  
+footer img{
+   width:20px; 
+   height: 20px;
+   padding-right:8px;
+}
