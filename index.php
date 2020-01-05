@@ -4,7 +4,7 @@ session_start();
 define( 'DB_HOST', 'localhost' );
 define( 'DB_NAME', 'portfolio' );
 define( 'DB_LOGIN', 'root' );
-define( 'DB_PWD', '' );
+define( 'DB_PWD', 'root' );
 
 require_once( 'vendor/SPDO.php' );
 require_once( 'vendor/SRequest.php' );
