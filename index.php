@@ -8,7 +8,7 @@ define( 'DB_PWD', 'root' );
 
 require_once( 'vendor/SPDO.php' );
 require_once( 'vendor/SRequest.php' );
-
+echo "bouh";
 
 
 function loadClass( $className ) {//chargement des classes 
