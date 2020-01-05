@@ -6,6 +6,8 @@ define( 'DB_NAME', 'portfolio' );
 define( 'DB_LOGIN', 'root' );
 define( 'DB_PWD', 'root' );
 
+echo 'coucou flo';
+
 require_once( 'vendor/SPDO.php' );
 require_once( 'vendor/SRequest.php' );
 
